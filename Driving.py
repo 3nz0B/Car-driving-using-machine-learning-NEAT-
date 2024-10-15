@@ -183,9 +183,8 @@ def eval_genomes(genomes, config):
                     cars[i].line_distances["90 Left"],
                     cars[i].line_distances["90 Right"]
                 ]
-                outputs = nets[i].activate(inputs)
-                
                 #Update cars action based on outputs of neural network
+                outputs = nets[i].activate(inputs)
                 cars[i].update(outputs)
 
                 #Fitness rewards/penalties
