@@ -245,6 +245,7 @@ def run(config_file):
     p = neat.Population(config)
     global generation
     generation = 0
+    #Main simulation loop
     while True:
         generation += 1
         for event in pygame.event.get():
